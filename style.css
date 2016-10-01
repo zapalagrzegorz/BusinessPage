@@ -1,0 +1,571 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*============= NAV =============*/
+
+.nav {
+    float: none;
+    height: 50px;
+    background-color: #313332;
+}
+.nav_logo {
+    padding: 10px;
+}
+.nav_list {
+    float: right;
+    list-style-type: none;
+}
+.nav_item {
+    display: inline-block;
+    height: 100%;
+}
+.nav_link {
+    color: #FFF;
+    line-height: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 0 20px;
+}
+.nav_item:hover {
+    background-color: #3d3f3e;
+}
+.nav_item:active {
+    background-color: #5d3f3e;
+}
+
+/*======================= HERO =================================*/
+
+.hero {
+    background: #CCC url(https://static.pexels.com/photos/38556/office-notes-notepad-entrepreneur-38556-large.jpeg) 0/cover no-repeat;
+    height: 75vh;
+}
+.hero_header {
+    color: #FFF;
+    line-height: 1.45em;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 10%;
+    max-width: 800px;
+    min-width: 40%;
+    padding: 40px;
+    float: right;
+    text-align: left;
+}
+.hero_header > h1 > span {
+    display: block;
+}
+.hero_header-thin {
+    font-weight: 300;
+    padding-top: 0;
+}
+.hero_header-bold {
+    font-weight: 800;
+    padding-top: 3px;
+}
+
+/*======================= PROFITS ========================================*/
+
+.profits {
+    padding: 10vh 0;
+    text-align: center;
+    color: #313332;
+}
+.profits article > h2 {
+    text-transform: uppercase;
+    padding-bottom: 3px;
+    font-weight: 700;
+}
+.profits article > i {
+    padding-bottom: 20px;
+    transition: .4s;
+}
+.profits_text {
+    color: #AAA;
+    font-size: 0.8em;
+}
+.profits article > i:hover {
+    color: #00c6e5;
+}
+
+/*======================= WORKS ========================================*/
+
+.works h2 {
+    text-align: center;
+    color: #313332;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 2.2em;
+    padding-bottom: 15px;
+}
+.works p {
+    font-size: 0.8em;
+    color: #AAA;
+    padding: 0 12.5% 30px;
+}
+.works_gallery {
+    width: 100%;
+}
+.gallery figure {
+    width: 20%;
+    min-height: 35vh;
+    float: left;
+    color: #999;
+}
+.gallery_photo1 {
+    background: #CCC url(https://static.pexels.com/photos/2324/skyline-buildings-new-york-skyscrapers-large.jpg) 0/cover no-repeat;
+}
+.gallery_photo2 {
+    background: #CCC url(https://static.pexels.com/photos/12573/photo-1443453489887-98f56bc5bb38-large.jpeg) 0/cover no-repeat;
+}
+.gallery_photo3 {
+    background: #CCC url(https://static.pexels.com/photos/7306/pexels-photo-large.jpeg) 0/cover no-repeat;
+}
+.gallery_photo4 {
+    background: #CCC url(https://static.pexels.com/photos/28221/pexels-photo-28221-large.jpg) 0/cover no-repeat;
+}
+.gallery_photo5 {
+    background: #CCC url(https://static.pexels.com/photos/38556/office-notes-notepad-entrepreneur-38556-large.jpeg) 0/cover no-repeat;
+}
+.gallery_photo6 {
+    background: #CCC url(https://static.pexels.com/photos/5117/people-feet-train-travelling-large.jpeg) 0/cover no-repeat;
+}
+.gallery_photo7 {
+    background: #CCC url(https://static.pexels.com/photos/38556/office-notes-notepad-entrepreneur-38556-large.jpeg) 0/cover no-repeat;
+}
+.gallery_photo8 {
+    background: #CCC url(https://static.pexels.com/photos/5117/people-feet-train-travelling-large.jpeg) 0/cover no-repeat;
+}
+.gallery_photo9 {
+    background: #CCC url(https://static.pexels.com/photos/7306/pexels-photo-large.jpeg) 0/cover no-repeat;
+}
+.gallery_photo10 {
+    background: #CCC url(https://static.pexels.com/photos/2324/skyline-buildings-new-york-skyscrapers-large.jpg) 0/cover no-repeat;
+}
+.gallery_box {
+    position: relative;
+    transition: 1s;
+    min-height: 35vh;
+}
+.gallery figure:hover > .gallery_box {
+    background-color: rgba(0, 0, 0, 0.51);
+}
+.gallery_box > i.first,
+.gallery_box > i.second {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.gallery_box > i.first {
+    left: 0%;
+    transition: left .7s linear, opacity .7s linear;
+}
+.gallery_box > i.second {
+    right: 0%;
+    transition: right .7s linear, opacity .7s linear;
+}
+.gallery figure:hover .gallery_box > i.first,
+.gallery figure:hover .gallery_box > i.second {
+    opacity: 1;
+}
+.gallery figure:hover .gallery_box > i.first {
+    left: 35%;
+}
+.gallery figure:hover .gallery_box > i.second {
+    right: 35%;
+}
+.gallery_box > i.first:hover,
+.gallery_box > i.second:hover {
+    color: #DDD;
+    cursor: pointer;
+}
+
+/*======================= PEOPLE =================================*/
+
+.people {
+    padding: 10vh 0;
+}
+.people_section {
+    position: relative;
+}
+.people_img {
+    position: relative;
+    width: 20vw;
+    height: 20vw;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+    border-radius: 50%;
+    transition: background-color .5s;
+}
+.people_section > p {
+    padding-top: 10px;
+    text-align: center;
+    color: #797979;
+}
+.people_img > p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .5s;
+    color: #FFF;
+}
+.people_img:hover > p {
+    opacity: 1;
+}
+.people_img:hover {
+    background-color: #797979;
+}
+
+/* ===========  PROMOTION  ===================*/
+
+.promotion {
+    min-height: 400px;
+    padding-top: 100px;
+    padding-bottom: 0;
+    background-color: #797979;
+    background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
+    color: #FFF;
+}
+.promotion figure {
+    padding: 0;
+}
+.promotion_section p {
+    text-align: left;
+    padding: 0 5px;
+    font-size: 0.9em;
+    font-weight: 300;
+}
+.italic {
+    font-style: italic;
+}
+.promotion_section h2 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 2.1em;
+    padding-bottom: 15px;
+}
+.promotion figure {
+    border-top: 5px solid #313332;
+    border-left: 5px solid #313332;
+    border-right: 5px solid #313332;
+    border-radius: 5px;
+}
+.promotion_photo {
+    min-height: 98.5px;
+    float: left;
+    color: #999;
+    padding: 0;
+}
+.promotion_photo-1 {
+    background: #CCC url(https://static.pexels.com/photos/2324/skyline-buildings-new-york-skyscrapers-large.jpg) 0/cover no-repeat;
+}
+.promotion_photo-2 {
+    background: #CCC url(https://static.pexels.com/photos/12573/photo-1443453489887-98f56bc5bb38-large.jpeg) 0/cover no-repeat;
+}
+.promotion_photo-3 {
+    background: #CCC url(https://static.pexels.com/photos/7306/pexels-photo-large.jpeg) 0/cover no-repeat;
+}
+.left-padding {
+    padding-left: 2%;
+}
+
+/*=============== NUMBERS ====================*/
+
+.numbers {
+    padding: 15vh 0;
+}
+.numbers section {
+    text-align: center;
+}
+.numbers h2 {
+    font-weight: 800;
+    font-size: 2.4em;
+    color: #313332;
+}
+.numbers p {
+    color: #00c6e5;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/*=============== Footer =====================*/
+
+.footer {
+    padding: 5vh;
+    color: #FFF;
+    background-color: #313332;
+}
+.footer_section {
+    padding: 0 10px;
+}
+.footer_header {
+    margin-bottom: 15px;
+}
+.footer_header-address {
+    font-style: normal;
+}
+.footer_section h2 {
+    font-weight: 800;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+.footer_line {
+    position: relative;
+    top: 1.5em;
+    border-top: 3px solid #999;
+}
+.footer_text {
+    font-style: normal;
+    text-align: left;
+    font-size: .8em;
+    font-weight: 300;
+}
+.footer_text-bold {
+    font-weight: 600;
+}
+.footer_social {
+    margin-top: 10px;
+}
+.footer_social_block {
+    float: left;
+    position: relative;
+    width: 40px;
+    min-height: 40px;
+    background-color: #00c6e5;
+    color: #FFF;
+    margin: 0 2px;
+}
+.footer_social_block i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.footer_copyright {
+    background-color: #242625;
+    color: #FFF;
+    text-align: center;
+}
+.footer_copyright p {
+    padding: 2.5vh 0;
+}
+
+/* ============== GRID ========================*/
+
+[class*="col-"] {
+    width: 100%;
+    padding: 12px;
+    float: left;
+}
+@media (max-width: 767px) {
+    /* For tablets: */
+    .col-s-1 {
+        width: 8.33%;
+    }
+    .col-s-2 {
+        width: 16.66%;
+    }
+    .col-s-3 {
+        width: 25%;
+    }
+    .col-s-4 {
+        width: 33.33%;
+    }
+    .col-s-5 {
+        width: 41.66%;
+    }
+    .col-s-6 {
+        width: 50%;
+    }
+    .col-s-7 {
+        width: 58.33%;
+    }
+    .col-s-8 {
+        width: 66.66%;
+    }
+    .col-s-9 {
+        width: 75%;
+    }
+    .col-s-10 {
+        width: 83.33%;
+    }
+    .col-s-11 {
+        width: 91.66%;
+    }
+    .col-s-12 {
+        width: 100%;
+    }
+    /*=================== NAV <767 ===================*/
+    .nav {
+        height: auto;
+        background-color: #313332;
+    }
+    .nav_logo {
+        padding: 10px;
+        display: block;
+        margin: 0 auto;
+    }
+    .nav_list {
+        float: none;
+    }
+    .nav_item {
+        display: block;
+        text-align: center;
+    }
+    /* =================== HERO <767 ============================ */
+    .hero {
+        position: relative;
+    }
+    .hero_header {
+        min-width: 30%;
+        max-width: 90%;
+        display: block;
+        margin: 0 auto;
+        color: #FFF;
+        line-height: 1.25em;
+        font-size: 1.1em;
+        padding: 15px;
+        text-align: center;
+        float: none;
+        position: relative;
+        top: 7vh;
+    }
+    .hero_header-bold {
+        font-weight: 600;
+    }
+    /* ========================= GALLERY <767 ============================*/
+    .gallery figure {
+        width: 50%;
+        height: 60vh;
+    }
+    .gallery figure:last-child {
+        display: none;
+    }
+    .gallery_box {
+        position: relative;
+        min-height: 35vh;
+        bottom: 0;
+    }
+    .gallery figure > .gallery_box {
+        position: relative;
+        min-height: 25%;
+        top: 75%;
+        background-color: rgba(0, 0, 0, 0.51)
+    }
+    .gallery_box > i.first,
+    .gallery_box > i.second {
+        opacity: 1;
+        color: #FFF;
+        transform: translate(-50%, -50%);
+    }
+    .gallery figure .gallery_box > i.first {
+        left: 35%;
+    }
+    .gallery figure .gallery_box > i.second {
+        right: 35%;
+    }
+    .gallery_box > i.first:active,
+    .gallery_box > i.second:active {
+        color: #5d3f3e;
+    }
+    /*======================= PEOPLE <767  =================================*/
+    .people {
+        padding: 10vh 0;
+    }
+    .people_section {
+        position: relative;
+    }
+    .people_img {
+        width: 35vw;
+        height: 35vw;
+        background-color: #6e7f80;
+    }
+    .people_section > p {
+        padding-top: 10px;
+        text-align: center;
+        color: #797979;
+    }
+    .people_img > p {
+        opacity: 1;
+    }
+    /* ================= FOOTER <767 ============================= */
+    .footer_line {
+        top: 1.5em;
+        right: 0;
+    }
+    .footer h2 {
+        text-align: center;
+    }
+    .footer p {
+        text-align: justify;
+    }
+}
+@media (min-width: 768px) {
+    /* For desktop: */
+    .col-m-1 {
+        width: 8.33%;
+    }
+    .col-m-2 {
+        width: 16.66%;
+    }
+    .col-m-2-4 {
+        width: 20%;
+    }
+    .col-m-2-25 {
+        width: 18.7425%;
+    }
+    .col-m-3 {
+        width: 25%;
+    }
+    .col-m-4 {
+        width: 33.33%;
+    }
+    .col-m-5 {
+        width: 41.66%;
+    }
+    .col-m-6 {
+        width: 50%;
+    }
+    .col-m-7 {
+        width: 58.33%;
+    }
+    .col-m-8 {
+        width: 66.66%;
+    }
+    .col-m-9 {
+        width: 75%;
+    }
+    .col-m-10 {
+        width: 83.33%;
+    }
+    .col-m-11 {
+        width: 91.66%;
+    }
+    .col-m-12 {
+        width: 100%;
+    }
+    .col-offset-m-1-5 {
+        margin-left: 12.5%;
+    }
+}
