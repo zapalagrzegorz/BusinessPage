@@ -1,0 +1,30 @@
+{
+  "name": "kodilla-business-page",
+  "version": "1.0.0",
+  "description": "Kodilla front-end bootcamp page.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zapalagrzegorz/BusinessPage.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "grunt"
+  ],
+  "author": "Grzegorz Zapala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zapalagrzegorz/BusinessPage/issues"
+  },
+  "homepage": "https://github.com/zapalagrzegorz/BusinessPage#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.1"
+  }
+}
