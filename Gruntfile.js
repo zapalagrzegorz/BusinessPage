@@ -17,7 +17,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'css/style.css': 'sass/sassStyle.scss'
+                    'css/style.css': 'scss/sassStyle.scss'
                 }
             }
         },
@@ -55,6 +55,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-browser-sync');
     // Default task(s).
-    grunt.registerTask('default', ['imagemin', 'browserSync', 'watch']);
+    grunt.registerTask('default', ['sass', 'imagemin', 'browserSync', 'watch']);
 
 };
