@@ -32,7 +32,7 @@
         </section>
         <main>
             <!-- PROFITS-->
-            <section class="profits">
+            <section class="profits animate">
                 <div class="container">
                     <div class="row">
                         <article class="col-s-12 col-m-4 col-lg-4">
@@ -54,13 +54,13 @@
                 </div>
             </section>
             <!-- WORKS-->
-            <section class="works">
+            <section class="works animate">
                 <div class="container">
                     <h2>Featured works</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie feugiat aliquam. Consectetur adipiscing elit. Nunc molestie feugiat aliquam.</p>
                 </div>
             </section>
-            <section class="gallery">
+            <section class="gallery animate">
                 <div class="row">
                     <figure class="photo1">
                         <div class="box">
@@ -127,7 +127,7 @@
                 </div>
             </section>
             <!-- PEOPLE-->
-            <section class="people">
+            <section class="people animate">
                 <div class="container">
                     <div class="row">
                         <div class="section col-s-12 col-m-6 col-lg-3">
@@ -158,7 +158,7 @@
                 </div>
             </section>
             <!-- PROMOTION -->
-            <article class="promotion">
+            <article class="promotion animate">
                 <div class="container">
                     <div class="row">
                         <figure class="col-s-5 col-m-5 col-lg-6 promotion_section">
@@ -195,22 +195,22 @@
                 </div>
             </article>
             <!-- NUMBERS-->
-            <section class="numbers">
+            <section class="numbers animate">
                 <div class="container">
                     <div class="row">
-                        <section class="col-m-6 col-s-12 col-lg-3">
+                        <section class="col-m-6 col-s-12 col-lg-3 ">
                             <h2>455</h2>
                             <p>Followers</p>
                         </section>
-                        <section class="col-m-6 col-s-12 col-lg-3">
+                        <section class="col-m-6 col-s-12 col-lg-3 ">
                             <h2>1991</h2>
                             <p>Since</p>
                         </section>
-                        <section class="col-m-6 col-s-12 col-lg-3">
+                        <section class="col-m-6 col-s-12 col-lg-3 ">
                             <h2>806</h2>
                             <p>Happy clients</p>
                         </section>
-                        <section class="col-m-6 col-s-12 col-lg-3">
+                        <section class="col-m-6 col-s-12 col-lg-3 ">
                             <h2>923</h2>
                             <p>Projects</p>
                         </section>
@@ -219,7 +219,7 @@
             </section>
         </main>
         <!-- FOOTER -->
-        <footer class="row">
+        <footer class="row animate">
             <div class="footer_section col-s-12 col-m-4 col-lg-4">
                 <div class="row footer_header">
                     <div class="col-s-12 col-m-6 col-lg-6">
@@ -239,22 +239,22 @@
                     </div>
                 </div>
                 <address>
-                            <div class="row">
-                                <div class="col-m-4 col-s-4 col-lg-4 text text-bold">Address:</div>
-                                <div class="col-m-8 col-s-8 col-lg-8 text">66 South Street</div>
-                            </div>
-                            <div class="row">
-                                <div class="col-m-4 col-s-4 col-lg-4 text text-bold">Phone:</div>
-                                <div class="col-m-8 col-s-8 col-lg-8 text">
-                                    <p>+440 987654321 - Office</p>
-                                    <p>+440 123456789 - Fax</p>
-                                </div>
-                            </div>
-                            <div class="row ">
-                                <div class="col-m-4 col-s-4 col-lg-4 text text-bold">Email:</div>
-                                <div class="col-m-8 col-s-8 col-lg-8 text">freepik@sitename.com</div>
-                            </div>
-                        </address>
+                    <div class="row">
+                        <div class="col-m-4 col-s-4 col-lg-4 text text-bold">Address:</div>
+                        <div class="col-m-8 col-s-8 col-lg-8 text">66 South Street</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-m-4 col-s-4 col-lg-4 text text-bold">Phone:</div>
+                        <div class="col-m-8 col-s-8 col-lg-8 text">
+                            <p>+440 987654321 - Office</p>
+                            <p>+440 123456789 - Fax</p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-m-4 col-s-4 col-lg-4 text text-bold">Email:</div>
+                        <div class="col-m-8 col-s-8 col-lg-8 text">freepik@sitename.com</div>
+                    </div>
+                </address>
             </div>
             <div class="footer_section col-s-12 col-m-4 col-lg-4">
                 <div class="row footer_header">
@@ -290,5 +290,10 @@
         <aside class="copyright">
             <p>Copyrights 2016</p>
         </aside>
+        <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+        <script>
+            window.sr = ScrollReveal();
+            sr.reveal('.animate');
+        </script>
     </body>
 </html>
