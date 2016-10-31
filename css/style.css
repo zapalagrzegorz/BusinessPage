@@ -1,15 +1,15 @@
-.h2, .works h2, .numbers h2 {
-  text-transform: uppercase;
-  font-weight: 800;
-  font-size: 2.1em;
-  padding-bottom: 15px; }
-
 * {
   box-sizing: border-box;
   margin: 0;
   border: 0px solid black;
   padding: 0;
   font-family: 'Open Sans', sans-serif; }
+
+.h2, .works h2, .numbers h2 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 2.1em;
+  padding-bottom: 15px; }
 
 .container {
   width: 100%;
@@ -66,8 +66,7 @@
   .hero span {
     display: block; }
   .hero .header-thin {
-    font-weight: 300;
-    font-size: 2.1em; }
+    font-weight: 300; }
   .hero .header-bold {
     font-weight: 800;
     padding-top: 3px; }
@@ -102,7 +101,7 @@
 
 .gallery figure {
   width: 20%;
-  min-height: 35vh;
+  min-height: 40vh;
   float: left;
   color: #AAA; }
   .gallery figure:hover > .box {
@@ -117,7 +116,7 @@
   .gallery figure .box {
     position: relative;
     transition: 1s;
-    min-height: 35vh; }
+    min-height: 40vh; }
     .gallery figure .box > .first,
     .gallery figure .box > .second {
       opacity: 0;
@@ -166,38 +165,56 @@
   background: #AAA url(https://static.pexels.com/photos/2324/skyline-buildings-new-york-skyscrapers-large.jpg) 0/cover no-repeat; }
 
 /*======================= PEOPLE =================================*/
+/*======================= PEOPLE =================================*/
 .people {
   padding: 10vh 0; }
   .people .section {
-    position: relative; }
+    position: relative;
+    margin-bottom: 10px; }
     .people .section > p {
       padding-top: 10px;
       text-align: center;
       color: #797979; }
     .people .section .img {
       position: relative;
-      width: 20vw;
-      height: 20vw;
+      width: 16vw;
+      height: 16vw;
       margin: 0 auto;
-      background-color: #f0f0f0;
-      background-image: url("https://www.transparenttextures.com/patterns/diamond-upholstery.png");
       -webkit-border-radius: 25%;
       -moz-border-radius: 25%;
       border-radius: 25%;
       transition: background-color .5s; }
-      .people .section .img > p {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 0;
-        transition: .5s;
-        color: #FFF;
-        font-size: 1.5em; }
-      .people .section .img:hover > p {
-        opacity: 1; }
-      .people .section .img:hover {
-        background-color: #797979; }
+      .people .section .img > div {
+        width: 16vw;
+        height: 16vw;
+        border-radius: 25%; }
+        .people .section .img > div > p {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          opacity: 0;
+          transition: .3s;
+          color: #FFF;
+          font-size: 1.5em; }
+      .people .section .img > div:hover {
+        background-color: rgba(0, 0, 0, 0.51); }
+        .people .section .img > div:hover p {
+          opacity: 1; }
+    .people .section .boss {
+      background: url("https://static.pexels.com/photos/105472/pexels-photo-105472.jpeg") no-repeat center;
+      background-size: cover; }
+      .people .section .boss p {
+        color: #222; }
+    .people .section .ceo {
+      background: url("https://static.pexels.com/photos/12628/pexels-photo-12628.jpeg") no-repeat center;
+      background-size: cover; }
+    .people .section .secretary {
+      background: url("http://www.gratisography.com/pictures/284_1.jpg") no-repeat center;
+      background-size: cover; }
+    .people .section .developer {
+      background: url("https://static.pexels.com/photos/108048/pexels-photo-108048.jpeg") no-repeat center;
+      background-size: cover; }
 
 /* ===========  PROMOTION  ===================*/
 .promotion {
